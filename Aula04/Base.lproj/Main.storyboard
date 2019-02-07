@@ -78,7 +78,7 @@
                                     <action selector="changeOrger:" destination="BYZ-38-t0r" eventType="valueChanged" id="diV-8y-xzq"/>
                                 </connections>
                             </segmentedControl>
-                            <slider opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" minValue="-1" maxValue="100" translatesAutoresizingMaskIntoConstraints="NO" id="wwd-a0-DWb">
+                            <slider opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" minValue="-1" maxValue="100" minimumValueImage="ant" maximumValueImage="elephant" translatesAutoresizingMaskIntoConstraints="NO" id="wwd-a0-DWb">
                                 <rect key="frame" x="65" y="412" width="244" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <connections>
@@ -92,6 +92,13 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="W1u-kI-Xck">
+                                <rect key="frame" x="138" y="296" width="97" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
@@ -103,7 +110,7 @@
                         <outlet property="botoes" destination="ltG-Rr-YZo" id="lOV-Fy-t9j"/>
                         <outlet property="lbCount" destination="r3l-jG-w2i" id="NRr-R2-9Yw"/>
                         <outlet property="lbMessage" destination="eLM-hc-bLE" id="T0i-cX-RdZ"/>
-                        <outlet property="tefdsfsd" destination="ltG-Rr-YZo" id="YpN-Tu-6VV"/>
+                        <outlet property="tfTexto" destination="W1u-kI-Xck" id="6FW-tt-l7h"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
@@ -118,9 +125,10 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="imagens-quebrar-leis" translatesAutoresizingMaskIntoConstraints="NO" id="c6g-zj-hbY">
-                                <rect key="frame" x="33" y="126" width="314" height="383"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Logo" translatesAutoresizingMaskIntoConstraints="NO" id="xYo-hw-1ds">
+                                <rect key="frame" x="131" y="174" width="100" height="100"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <viewLayoutGuide key="safeArea" id="dpy-cu-go7"/>
                             </imageView>
                         </subviews>
                         <color key="backgroundColor" red="1" green="0.96529688073223263" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -156,6 +164,8 @@
         </scene>
     </scenes>
     <resources>
-        <image name="imagens-quebrar-leis" width="673" height="320"/>
+        <image name="Logo" width="100" height="100"/>
+        <image name="ant" width="30" height="30"/>
+        <image name="elephant" width="30" height="30"/>
     </resources>
 </document>

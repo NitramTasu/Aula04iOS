@@ -14,6 +14,7 @@ class ViewController: UIViewController {
     @IBOutlet weak var lbMessage: UILabel!
     @IBOutlet weak var lbCount: UILabel!
     @IBOutlet weak var botoes: UISegmentedControl!
+    @IBOutlet weak var tfTexto: UITextField!
     var orders = [
         "Saindo o café",
         "Preparando um chá",
@@ -26,7 +27,9 @@ class ViewController: UIViewController {
 
     @IBAction func changeLabel(_ sender: Any) {
         
-        lbMessage.text = "Mudou o texto"
+        lbMessage.text = tfTexto.text
+        //tfTexto.resignFirstResponder()
+        view.endEditing(true)
     }
     
     @IBAction func changeOrger(_ sender: UISegmentedControl) {
