@@ -15,6 +15,7 @@ class ViewController: UIViewController {
     @IBOutlet weak var lbCount: UILabel!
     @IBOutlet weak var botoes: UISegmentedControl!
     @IBOutlet weak var tfTexto: UITextField!
+    @IBOutlet weak var viResult: UIView!
     var orders = [
         "Saindo o café",
         "Preparando um chá",
@@ -23,6 +24,8 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         lbMessage.text = "Testando o texto"
+        
+        
     }
 
     @IBAction func changeLabel(_ sender: Any) {
@@ -30,6 +33,7 @@ class ViewController: UIViewController {
         lbMessage.text = tfTexto.text
         //tfTexto.resignFirstResponder()
         view.endEditing(true)
+        viResult.isHidden = true
     }
     
     @IBAction func changeOrger(_ sender: UISegmentedControl) {
