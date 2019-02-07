@@ -35,7 +35,7 @@ class ViewController: UIViewController {
     }
     @IBAction func printValue(_ sender: UISlider) {
         lbCount.text = String(Int(sender.value))
-        x
+        
     }
 }
 

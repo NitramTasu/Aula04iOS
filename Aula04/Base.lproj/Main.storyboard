@@ -117,6 +117,12 @@
                     <view key="view" contentMode="scaleToFill" id="Yhc-6K-2bQ">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="imagens-quebrar-leis" translatesAutoresizingMaskIntoConstraints="NO" id="c6g-zj-hbY">
+                                <rect key="frame" x="33" y="126" width="314" height="383"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                        </subviews>
                         <color key="backgroundColor" red="1" green="0.96529688073223263" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <viewLayoutGuide key="safeArea" id="7CQ-xq-YJa"/>
                     </view>
@@ -124,7 +130,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="QeB-TC-efc" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1812" y="131.78410794602701"/>
+            <point key="canvasLocation" x="1812" y="131.52709359605913"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="MI4-zX-GzG">
@@ -149,4 +155,7 @@
             <point key="canvasLocation" x="308" y="134"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="imagens-quebrar-leis" width="673" height="320"/>
+    </resources>
 </document>
